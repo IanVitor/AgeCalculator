@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Age calculator app</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main>
+    <form id="form">
+      <div class="input-item">
+        <label for="Day">DAY</label>
+        <input id="day" type="number" min="1" max="31" required placeholder="DD">
+      </div>
+      <div class="input-item">
+        <label for="Month">MONTH</label>
+        <input id="month" type="number" min="1" max="12" required placeholder="MM">
+      </div>
+      <div class="input-item">
+        <label for="Year">YEAR</label>
+        <input id="year" type="number" min="0" required placeholder="YYYY">
+      </div>
+      <div id="btn-submit">
+        <button type="submit"><img src="assets/images/icon-arrow.svg" ></button>
+      </div>
+    </form>
+    <section>
+      <h1 id="yearResult"><span>--</span> years</h1>
+      <h1 id="monthResult"><span>--</span> months</h1>
+      <h1 id="dayResult"><span>--</span> days</h1>
+    </section>
+
+    <script src="scripts/app.js"></script>
+  </main>
+</body>
+</html>

@@ -1,0 +1,98 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins-bold;
+  src: url(../assets/fonts/Poppins-Bold.ttf);
+}
+
+:root{
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  background-color: var(--Off-white);
+}
+
+main{
+  max-width: 400px;
+  background-color: var(--White);
+  font-family: Poppins;
+  margin: 100px auto;
+  padding: 24px;
+  border-radius: 10px 10px 50px 10px;
+}
+
+form{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--Light-grey);
+}
+
+.input-item{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding-bottom: 20px;
+}
+
+.input-item input{
+  width: 80px;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid var(--Light-grey);
+}
+
+.input-item input::placeholder{
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.input-item label{
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--Smokey-grey);
+  padding: 3px 0;
+}
+
+#btn-submit button{
+  translate: 0px 50px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  padding: 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  background-color: var(--Purple);
+}
+
+#btn-submit button img{
+  width: 100%;
+}
+
+section h1{
+  font-weight: bold;
+  font-size: 36px;
+  font-family: Poppins-bold;
+}
+
+section h1 span{
+  color: var(--Purple);
+}
